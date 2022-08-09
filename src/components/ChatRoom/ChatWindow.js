@@ -53,12 +53,13 @@ const ContentStyled = styled.div`
 
 const FormStyled = styled(Form)`
   display: flex;
+  width: 200;
   justify-content: space-between;
   align-items: center;
+  marginLeft: -20;
   padding: 2px 2px 2px 0;
   border: 1px solid rgb(230, 230, 230);
-  border-radius: 2px;
-
+  border-radius: 20px;
   .ant-form-item {
     flex: 1;
     margin-bottom: 0;
@@ -178,20 +179,17 @@ export default function ChatWindow() {
                   autoComplete='off'
                 />
               </Form.Item>
-              <Button type='primary' onClick={handleOnSubmit}>
-                Gửi
+              <Button type='primary' onClick={handleOnSubmit} style={{ borderRadius: 50, width: 200 }}>
+                Send Message
               </Button>
             </FormStyled>
           </ContentStyled>
         </>
       ) : (
-        <Alert
-          message='Hãy chọn phòng'
-          type='info'
-          showIcon
-          style={{ margin: 5 }}
-          closable
-        />
+        <img src='https://img.freepik.com/premium-vector/smart-phone-with-messenger-chat-screen-sms-template-bubbles-compose-dialogues_172533-344.jpg?w=2000' width={"100%"} height={"height:100%"} ></img>
+
+
+
       )}
     </WrapperStyled>
   );

@@ -28,6 +28,7 @@ const LinkStyled = styled(Typography.Link)`
   display: block;
   margin-bottom: 5px;
   color: white;
+  
 `;
 
 export default function RoomList() {
@@ -40,16 +41,15 @@ export default function RoomList() {
 
   return (
     <Collapse ghost defaultActiveKey={['1']}>
-      <PanelStyled header='Danh sách các phòng' key='1'>
+      <PanelStyled header='Danh sách phòng' key='1'>
         {rooms.map((room) => (
           <LinkStyled key={room.id} onClick={() => setSelectedRoomId(room.id)}>
             {room.name}
           </LinkStyled>
         ))}
         <Button
-          type='text'
+        ghost
           icon={<PlusSquareOutlined />}
-          className='add-room'
           onClick={handleAddRoom}
         >
           ADD Room
