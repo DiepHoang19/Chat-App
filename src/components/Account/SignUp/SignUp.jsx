@@ -1,10 +1,6 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import "./SignIn.css";
 
-
-
-export class SignIn extends Component {
+export class SignUp extends Component {
     constructor(props) {
         super(props);
         this.state = {}
@@ -12,7 +8,6 @@ export class SignIn extends Component {
     render() {
         return (
             <>
-
                 <div className="container" id="container">
                     <div className="form-container sign-up-container">
                         <h1>Create Account</h1>
@@ -66,14 +61,16 @@ export class SignIn extends Component {
                             <div className="overlay-panel overlay-right">
                                 <h1>Hello, Friend!</h1>
                                 <p>Enter your personal details and start journey with us</p>
-                                    <button className="ghost" id="signUp">
-                                        Sign Up
-                                    </button>
-
+                                <button className="ghost" id="signUp">
+                                    Sign Up
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
+
+
+
             </>
         )
     }

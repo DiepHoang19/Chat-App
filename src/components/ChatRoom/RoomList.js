@@ -48,7 +48,7 @@ export default function RoomList() {
           </LinkStyled>
         ))}
         <Button
-        ghost
+          ghost
           icon={<PlusSquareOutlined />}
           onClick={handleAddRoom}
         >

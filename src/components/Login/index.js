@@ -3,6 +3,7 @@ import { Row, Col, Button, Typography } from 'antd';
 import firebase, { auth } from '../../firebase/config';
 import { addDocument, generateKeywords } from '../../firebase/services';
 import "../Account/SignIn.css";
+import { Link } from 'react-router-dom';
 
 
 const { Title } = Typography;
@@ -38,23 +39,17 @@ export default function Login() {
               <input type="password" placeholder="Password" />
             </div>
             <button className="button-signin">Sign In</button>
+
           </div>
         </div>
         <div className="overlay-container">
           <div className="overlay">
-            <div className="overlay-panel overlay-left">
-              <h1>Welcome Back!</h1>
-              <p>To keep connected with us please login with your personal info</p>
-              <button className="ghost" id="signIn">
-                Sign In
-              </button>
-            </div>
             <div className="overlay-panel overlay-right">
               <h1>Hello, Friend!</h1>
               <p>Enter your personal details and start journey with us</p>
               <div className="login-with">
                 <Button
-                 className="login-gg"
+                  className="login-gg"
                   style={{ width: '100%', marginBottom: 5 }}
                   onClick={() => handleLogin(googleProvider)}
                 >
@@ -62,7 +57,7 @@ export default function Login() {
                 </Button>
                 <div>
                   <Button
-                   className="login-fb"
+                    className="login-fb"
                     style={{ width: '100%' }}
                     onClick={() => handleLogin(fbProvider)}
                   >
