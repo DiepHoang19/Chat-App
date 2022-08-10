@@ -177,6 +177,7 @@ export default function ChatWindow() {
                   placeholder='Nhập tin nhắn...'
                   bordered={false}
                   autoComplete='off'
+                 
                 />
               </Form.Item>
               <Button type='primary' onClick={handleOnSubmit} style={{ borderRadius: 50, width: 200 }}>
