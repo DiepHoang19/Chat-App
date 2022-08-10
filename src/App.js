@@ -6,8 +6,7 @@ import AuthProvider from './Context/AuthProvider';
 import AppProvider from './Context/AppProvider';
 import AddRoomModal from './components/Modals/AddRoomModal';
 import InviteMemberModal from './components/Modals/InviteMemberModal';
-import { SignIn } from './components/Account/SignIn';
-import { SignUp } from './components/Account/SignUp/SignUp';
+
 
 
 
@@ -20,8 +19,6 @@ function App() {
           <Switch>
             <Route component={Login} path='/login' />
             <Route component={ChatRoom} path='/' />
-            <Route component={SignIn} path="/signin" />
-            <Route component={SignUp} path="/signup" />
           </Switch>
           <AddRoomModal />
           <InviteMemberModal />
