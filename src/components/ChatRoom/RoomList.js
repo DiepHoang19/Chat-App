@@ -32,12 +32,15 @@ const LinkStyled = styled(Typography.Link)`
 `;
 
 export default function RoomList() {
-  const { rooms, setIsAddRoomVisible, setSelectedRoomId } =
-    React.useContext(AppContext);
+  const { rooms, setIsAddRoomVisible, setSelectedRoomId } = React.useContext(AppContext);
 
   const handleAddRoom = () => {
     setIsAddRoomVisible(true);
+
   };
+
+
+
 
   return (
     <Collapse ghost defaultActiveKey={['1']}>

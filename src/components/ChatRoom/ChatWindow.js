@@ -177,21 +177,22 @@ export default function ChatWindow() {
                   placeholder='Nhập tin nhắn...'
                   bordered={false}
                   autoComplete='off'
-                 
+
                 />
               </Form.Item>
               <Button type='primary' onClick={handleOnSubmit} style={{ borderRadius: 50, width: 200 }}>
-                Send Message
-              </Button>
-            </FormStyled>
-          </ContentStyled>
+              Send Message
+            </Button>
+          </FormStyled>
+        </ContentStyled>
         </>
-      ) : (
-        <img src='https://img.freepik.com/premium-vector/smart-phone-with-messenger-chat-screen-sms-template-bubbles-compose-dialogues_172533-344.jpg?w=2000' width={"100%"} height={"height:100%"} ></img>
+  ) : (
+    <img src='https://img.freepik.com/premium-vector/smart-phone-with-messenger-chat-screen-sms-template-bubbles-compose-dialogues_172533-344.jpg?w=2000' width={"100%"} height={"height:100%"} ></img>
 
 
 
-      )}
-    </WrapperStyled>
+  )
+}
+    </WrapperStyled >
   );
 }

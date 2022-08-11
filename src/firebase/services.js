@@ -9,9 +9,9 @@ export const addDocument = (collection, data) => {
   });
 };
 
-// tao keywords cho displayName, su dung cho search
+// tạo keywords cho displayName, sử dụng  cho search
 export const generateKeywords = (displayName) => {
-  // liet ke tat cac hoan vi. vd: name = ["David", "Van", "Teo"]
+  // liệt kê các hoán vị . vd: name = ["David", "Van", "Teo"]
   // => ["David", "Van", "Teo"], ["David", "Teo", "Van"], ["Teo", "David", "Van"],...
   const name = displayName.split(' ').filter((word) => word);
 
@@ -21,10 +21,7 @@ export const generateKeywords = (displayName) => {
   let stringArray = [];
 
   /**
-   * khoi tao mang flag false
-   * dung de danh dau xem gia tri
-   * tai vi tri nay da duoc su dung
-   * hay chua
+   * khởi tạo mảng flag false dùng để đánh dấu xem giá trị tại bị trí này đã được sử dụng hay chưa
    **/
   for (let i = 0; i < length; i++) {
     flagArray[i] = false;
